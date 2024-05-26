@@ -31,7 +31,7 @@ repeat task.wait()
 	  game:GetService("VirtualInputManager"):SendKeyEvent(true,"W",false,game)
 	  car:PivotTo(CFrame.new(car.PrimaryPart.Position,workspace:FindFirstChild("justanormalpart").CFrame*CFrame.new(0,10,-2048).Position))
 	end
-until game.Players.LocalPlayer:DistanceFromCharacter(workspace:FindFirstChild("justanormalpart").CFrame*CFrame.new(0,10,-1000).Position) <50 or getfenv().auto == false
+until game.Players.LocalPlayer:DistanceFromCharacter(workspace:FindFirstChild("justanormalpart").CFrame*CFrame.new(0,10,-2048).Position) <50 or getfenv().auto == false
 game:GetService("VirtualInputManager"):SendKeyEvent(false,"W",false,game)
 end
 end)
