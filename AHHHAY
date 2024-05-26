@@ -20,18 +20,18 @@ if not workspace:FindFirstChild("justanormalpart") then
 	local new = Instance.new("Part",workspace)
 	new.Name = "justanormalpart"
 	new.Anchored = true
-	new.Size = Vector3.new(10000,10,10000)
+	new.Size = Vector3.new(1390.1827392578125,286.2778625488281,110.81790161132812)
 	new.Position = chr.HumanoidRootPart.Position+Vector3.new(0,5000,0)
 	  end
 	car.PrimaryPart = car.Body.Weight
-	car:PivotTo(workspace:FindFirstChild("justanormalpart").CFrame*CFrame.new(0,10,1000))
+	car:PivotTo(workspace:FindFirstChild("justanormalpart").CFrame*CFrame.new(0,286.2778625488281,110.81790161132812))
 local time = tick()
 repeat task.wait()
 	if getfenv().auto then
 	  game:GetService("VirtualInputManager"):SendKeyEvent(true,"W",false,game)
-	  car:PivotTo(CFrame.new(car.PrimaryPart.Position,workspace:FindFirstChild("justanormalpart").CFrame*CFrame.new(0,10,-1000).Position))
+	  car:PivotTo(CFrame.new(car.PrimaryPart.Position,workspace:FindFirstChild("justanormalpart").CFrame*CFrame.new(0,286.2778625488281, 110.81790161132812).Position))
 	end
-until game.Players.LocalPlayer:DistanceFromCharacter(workspace:FindFirstChild("justanormalpart").CFrame*CFrame.new(0,10,-1000).Position) <50 or getfenv().auto == false
+until game.Players.LocalPlayer:DistanceFromCharacter(workspace:FindFirstChild("justanormalpart").CFrame*CFrame.new(0,286.2778625488281,110.81790161132812).Position) <50 or getfenv().auto == false
 game:GetService("VirtualInputManager"):SendKeyEvent(false,"W",false,game)
 end
 end)
